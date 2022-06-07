@@ -126,3 +126,5 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(port, "Example port connected");
 });
+
+module.exports = app;
