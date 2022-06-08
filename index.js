@@ -1,5 +1,3 @@
-// volunTeer GLKpDWudG1c94VjW
-
 const express = require("express");
 const cors = require("cors");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
@@ -9,7 +7,7 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
-const uri = `mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.gkpf8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://volunTeer:GLKpDWudG1c94VjW@cluster0.gkpf8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -125,5 +123,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(port, "Example port connected");
 });
-
-module.exports = app;
